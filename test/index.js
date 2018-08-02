@@ -27,4 +27,12 @@ describe('Pubsub', function () {
       return expect(obj.num).to.equal(1) && done()
     }, 1)
   })
+  it('Remove event', function () {
+    events.remove('Custom')
+    expect(typeof events.callbacks['Custom']).to.equal('undefined')
+  })
+  it('Remove all events', function () {
+    events.removeAll()
+    expect(typeof events.callbacks['Custom2']).to.equal('undefined')
+  })
 })
