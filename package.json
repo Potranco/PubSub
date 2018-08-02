@@ -1,0 +1,45 @@
+{
+  "name": "Pubsub",
+  "version": "1.0.0",
+  "description": "Pattern Pub/sub (Events)",
+  "main": "src/index.js",
+  "author": "Potranco",
+  "license": "ISC",
+  "scripts": {
+    "start": "npm run test",
+    "validate": "standard",
+    "validateFix": "standard --fix",
+    "test": "npm run validate && mocha --exit"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^8.0.0",
+    "body-parser": "^1.18.2",
+    "browserify": "^16.1.1",
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "isomorphic-fetch": "^2.2.1",
+    "mocha": "^5.2.0",
+    "standard": "^11.0.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "/dist/",
+      "/test/"
+    ]
+  }
+}
