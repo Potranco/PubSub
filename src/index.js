@@ -12,7 +12,7 @@ class PubSub {
     )
   }
   remove (name) {
-    this.callbacks[name] = undefined
+    this.callbacks[name] = []
   }
   removeAll (name) {
     this.callbacks = {}
