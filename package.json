@@ -11,8 +11,7 @@
     "validateFix": "standard --fix",
     "test": "npm run validate && mocha --exit"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",

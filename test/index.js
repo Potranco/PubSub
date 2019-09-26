@@ -1,4 +1,6 @@
 var expect = require('chai').expect
+var describe = require('mocha').describe
+var it = require('mocha').it
 var PubSub = require('../src/index.js')
 
 var events = new PubSub()
@@ -21,7 +23,7 @@ describe('Pubsub', function () {
     events.emit('Custom', done)
   })
   it('Execute event not params', function (done) {
-    events.on('Custom2', function () { obj.num = 1})
+    events.on('Custom2', function () { obj.num = 1 })
     events.emit('Custom2')
     setTimeout(function () {
       return expect(obj.num).to.equal(1) && done()
